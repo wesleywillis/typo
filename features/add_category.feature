@@ -10,7 +10,8 @@ Feature: Add Category
   Scenario: Successfully Add Categories
     Given I am on the new category page
     When I fill in "category_name" with "Sprinkles"
-    And I fill in "category__body_and_extended_editor" with "Tasty on everything"
+    And I fill in "category_keywords" with "FoodStuffs"
+    And I fill in "category_description" with "Tasty on everything"
     And I press "Save"
     When I go to a list of categories
     Then I should see "Sprinkles"
